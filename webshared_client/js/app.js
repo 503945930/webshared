@@ -52,6 +52,11 @@ angular.module("app", [])
 
             })
         };
+        //刷新列表
+        $scope.fresh=function(){
+            console.log("11");
+            return $scope.getData();
+        };
 
 
         //当前图片列表
@@ -64,6 +69,14 @@ angular.module("app", [])
 
             });
             promise.then(function (data) {
+                console.log(data.data.value.length);
+                if(data.data.value.length>0){
+
+                    $scope.visible=false;
+
+                }else{
+                    $scope.visible=true;
+                }
                 $scope.data = data.data;
                 console.log(data.data.value);
             }, function (resp) {

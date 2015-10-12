@@ -15,11 +15,16 @@
     <div class="row">
         <h3>等待审核图片：</h3>
     </div>
+    <div class="row" ng-show="visible">
+        <div class="col-xs-12" style="text-align: center">
+            <button class="btn btn-default btn-lg" ng-click="fresh()">没图了，点击刷新试试</button>
+        </div>
+    </div>
 
     <div class="row" style="margin-top: 1em" ng-repeat="item in data.value">
         <div class="col-xs-12" style="margin-top: 0.5em">
-            <div><img ng-src="http://gobiiig.com/imgproxy?url={{item.pictureUrl}}" alt="..." class="img-rounded"
-                      width="100%" height="100%"></div>
+            <div ><img style="display:block;margin:0 auto" ng-src="http://gobiiig.com/imgproxy?url={{item.pictureUrl}}" alt="..." class="img-rounded"
+                      width="60%" height="50%"></div>
             <div style="margin-top: 0.5em ;text-align: center">
                 <button class="btn btn-primary btn-lg" ng-click="exam(item.id)"><i class="  icon-thumbs-up"></i>通 &nbsp;
                     过
