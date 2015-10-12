@@ -1,0 +1,42 @@
+{
+  "posters":[
+    {"img":"../images/01.jpg"},
+    {"img":"../images/02.jpg"},
+    {"img":"../images/03.jpg"}
+  ],
+  "points":"65413",
+  "comments":"32145",
+  "summary":"开学典礼",
+  "place":"喷泉广场",
+  "active":[
+    {"head":"../images/huoyue/01.jpg","name":"dawei","why":"no why"},
+    {"head":"../images/huoyue/02.jpg","name":"灰机","why":"没事干就来看一下"},
+    {"head":"../images/huoyue/03.jpg","name":"逗逼","why":"听他们说这个不错"},
+    {"head":"../images/huoyue/04.jpg","name":"kimi","why":"没什么"}
+  ],
+  "field":[
+    {"head":"../images/huoyue/05.jpg"},
+    {"head":"../images/huoyue/01.jpg"},
+    {"head":"../images/huoyue/02.jpg"},
+    {"head":"../images/huoyue/03.jpg"},{"head":"../images/huoyue/05.jpg"},
+    {"head":"../images/huoyue/06.jpg"},
+    {"head":"../images/huoyue/04.jpg"},
+    {"head":"../images/huoyue/01.jpg"},{"head":"../images/huoyue/05.jpg"},
+    {"head":"../images/huoyue/02.jpg"},
+    {"head":"../images/huoyue/03.jpg"},
+    {"head":"../images/huoyue/04.jpg"},
+    {"head":"../images/huoyue/05.jpg"},
+    {"head":"../images/huoyue/01.jpg"},{"head":"../images/huoyue/05.jpg"},{"head":"../images/huoyue/05.jpg"},
+    {"head":"../images/huoyue/02.jpg"},
+    {"head":"../images/huoyue/03.jpg"},
+    {"head":"../images/huoyue/06.jpg"},
+    {"head":"../images/huoyue/01.jpg"},
+    {"head":"../images/huoyue/05.jpg"},
+    {"head":"../images/huoyue/03.jpg"},
+    {"head":"../images/huoyue/02.jpg"},
+    {"head":"../images/huoyue/04.jpg"},
+    {"head":"../images/huoyue/03.jpg"},
+    {"head":"../images/huoyue/01.jpg"},
+    {"head":"../images/huoyue/02.jpg"}
+  ]
+}

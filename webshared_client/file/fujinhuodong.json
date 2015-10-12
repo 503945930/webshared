@@ -1,0 +1,11 @@
+{
+  "huodong":[
+    {"posters":"../images/01.jpg","theme":"演唱会","distance":"95","love":"850"},
+    {"posters":"../images/02.jpg","theme":"美食节目","distance":"105","love":"687"},
+    {"posters":"../images/03.jpg","theme":"相亲节目","distance":"120","love":"964"},
+    {"posters":"../images/04.jpg","theme":"游园会","distance":"123","love":"1523"},
+    {"posters":"../images/05.jpg","theme":"lol决赛","distance":"180","love":"1056"},
+    {"posters":"../images/06.jpg","theme":"奔跑吧，骚年","distance":"254","love":"896"}
+
+  ]
+}

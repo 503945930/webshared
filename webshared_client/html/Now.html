@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../bower_components/frozenui/css/frozen.css"/>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <title>Now</title>
+    <style type="text/css">
+        .nav1{font-size:20px;}
+        .img1{
+            width:100%;
+            height:300px;
+            position:relative;
+        }
+        .img1 .fa{margin-top:5px;
+            margin-right:5px;
+        }
+        .img1 p{
+
+            text-align: center;
+            border:1px solid #f8f8f8;
+        }
+        .img1 .jianjie{
+            position:absolute;
+            bottom:5px;
+            color:#eeeeee;
+        }
+        .nav1{
+            width:50px;
+            background:#000000;
+
+        }
+        .nav{
+            font-size:20px;
+            text-align:center;
+            line-height:30px;
+            color:#ffffff;
+        }
+        .ck{
+            background:#505a5b;
+        }
+        .img1 .jianjie{
+            position:absolute;
+            bottom:5px;
+            color:#eeeeee;
+        }
+        .app{
+            margin-left:4px;
+        }
+
+        .pinglun{
+            width:100%;
+            margin-top:10px;
+            margin-left:8px;
+        }
+         .posters{
+            width:60px;
+            height:60px;
+            float:left;
+            margin-right:8px;
+            border:1px solid #ff5042;
+             margin-top:3px;
+        }
+         .near li{
+             margin:5px auto;
+             display:block;
+             border:2px solid #222222;
+             background: #787878;
+         }
+        .plxq{
+            float:left;
+            font-size:14px;
+        }
+       .theme,.distance,.love{
+            color:red;
+        }
+       .posters,.posters-img{
+           border-radius: 5px;
+       }
+        .more{
+            width:100%;
+            height:50px;
+            background:#CCCCCC;
+            color: #ff3c29;
+        }
+        .ad{
+            display: block;
+            width:100%;
+            height:100px;
+        }
+        .love{
+            margin-top:24px;
+        }
+    </style>
+</head>
+<body>
+<header class="ui-header ui-header-positive ui-border-b ui-row-flex ui-whitespace" style="position:absolute;background:#111">
+    <a href="../index.html"><i class="fa fa-bars ui-col ui-col-10" ></i></a><h1 class="ui-col ui-col-80" style="color:#ffd700">Go BiiiG or Go Home</h1><i class="fa fa-undo  ui-col-10" ></i>
+</header>
+<section class="ui-container">
+    <h1 style="text-align: center">最火热现场Top Live</h1>
+    <div class="img1">
+        <div class="ui-flex ui-flex-pack-end">
+            <i class="fa fa-heart-o "></i>
+        </div>
+        <div class="ui-flex ui-flex-pack-center jianjie">
+            <p >2015 Apple 活动简介 地点</p>
+        </div>
+    </div>
+    <div >
+        <p style="color:#CCCCCC;font-szie:12px;"><span class="points">12387</span> points ．<span class="comments">244</span>comments</p>
+        <div>
+            <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-heart-o"></span></button>
+            <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-comment-o"></span></button>
+            <button class="app" type="submit" style="float:right;"><img src="../images/facebook.png" width="40" height="40";/></button>
+            <button class="app" type="submit" style="float:right"><img src="../images/QQ.png"width="40" height="40";/></button>
+            <button class="app" type="submit" style="float:right"><img src="../images/weixin.png" width="40" height="40";/></button>
+            <button class="app" type="submit" style="float:right"><img src="../images/xiangji.png"width="40" height="40";/></button>
+        </div>
+    </div>
+    <div class="guanggao ui-flex ui-flex-pack-center">
+        <a href=""><h1 style="font-size: 32px;">廣告位</h1></a>
+    </div>
+    <!--浮动菜单-->
+    <ul class="ui-row-flex nav2">
+        <li class="ui-col ui-flex ui-flex-pack-center nav1 "><a class="nav" href="javascript: void(0)">Hot</a></li>
+        <li class="ui-col ui-flex ui-flex-pack-center nav1 ck"><a class="nav" href="javascript: void(0)">Now</a></li>
+        <li class="ui-col ui-flex ui-flex-pack-center nav1"><a class="nav" href="javascript: void(0)">Upcoming</a></li>
+    </ul>
+    <div style="width:96%;height:250px;margin-left:2%;border: 2px solid #CCCCCC;">
+            <h1>地图 显示周边活动</h1>
+    </div >
+    <ul class="near">
+
+
+    </ul>
+    <div class="ui-border-radius ui-flex ui-flex-pack-center more"><h1 style="line-height:50px;"><b>更多。。。</b></h1></div>
+    </section>
+<script type="text/javascript">
+    var url1="../file/huodongyi.json";
+    var adurl="../file/AD.json";
+    var url2="../file/fujinhuodong.json";
+    var method="get";
+    $(".more").click(function(){
+        alert("点我干嘛！！！");
+    });
+    $(function(){
+        $.ajax({
+            url:url1,
+            type:method,
+            success:function(data){
+                $(".img1").html('<img src='+data.img+' width=100% height="300"/>');
+                $(".points").text(data.dianzhanshu);
+                $(".comments").text(data.pinlun);
+            }
+        });
+        $.ajax({
+            url:adurl,
+            type:method,
+            success:function(data){
+                $(".guanggao").empty();
+                var html="";
+                html+='<a class="ad" href='+data.url+'>' +
+                        '<img src='+data.img+' width=100% height="100"/>' +
+                        ' </a>';
+                $(".guanggao").html(html);
+            }
+        });
+        $.ajax({
+            url:url2,
+            type:method,
+            success:function(data){
+                $(".near").empty();
+                var html="";
+                $.each(data.huodong,function(index,content){
+                    html+='<li><div class="pinlun"><div class="posters"><img class="posters-img" src='+content.posters+' width="60" height="60" alt=""/></div>' +
+                            '<div class="theme"><b>'+content.theme+'</b>' +
+                            '<p class="distance" style="margin-top:25px;float:right;margin-right:15px;"><b>距离：</b>'+content.distance+'米</p>' +
+                            '<p class="love"><i style="margin-left:5px;" class="fa fa-heart-o">'+content.love+'</i></p></div></div>' +
+                            '<div style=clear:both></div>';
+                })
+                $(".near").html(html);
+            }
+        });
+       /* <div class="pinglun" >
+                <div class="touxiang">海报小图</div>
+                <div class="plxq">
+                <p class="zhene"><b>活动主题</b></p>
+        <p class="zhene" style="margin-left:200px;"><b>距离：</b>154米</p>
+        <p class="zhene"><i style="margin-left: 5px;margin-top:5px;" class="fa fa-heart-o">1202</i></p>
+        </div>
+        </div>
+        <div style="clear: both"></div>*/
+    });
+</script>
+</body>
+</html>

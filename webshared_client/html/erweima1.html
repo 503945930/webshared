@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+
+    <title>竖直轮播</title>
+    <style type="text/css">
+        html,body{
+            width:100%;
+            height:100%;
+            margin:0;
+            padding:0;
+        }
+      .on{
+          width:100%;
+          height:75%;
+          min-height: 500px;
+          overflow: hidden;
+      }
+        .images{
+            list-style-type: none;
+            width:100%;
+            height:100%;
+            padding:0px;
+            margin:0px;
+            background-size: 100% 100% !important;
+        }
+        .images li{
+            display: block;
+            width:100%;
+            height:100%;
+            background-size:100% 100% !important;
+        }
+
+        .head{
+            margin-top:15px;
+        }
+     .down{
+         width:100%;
+         height:25%;
+         position: relative;
+         min-height:230px;
+         background-size: 100% 100% !important;
+     }
+        .erweima{
+            position: absolute;
+            left: 0;
+            bottom:0;
+        }
+    </style>
+</head>
+<body >
+  <div class="on">
+      <ul class="images"></ul>
+  </div>
+  <div class="down">
+      <div CLASS="erweima"></div>
+  </div>
+  <script src="../js/erweima1.js"></script>
+</body>
+</html>

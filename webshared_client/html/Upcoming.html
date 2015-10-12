@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../bower_components/frozenui/css/frozen.css"/>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <title>Upcoming</title>
+    <style type="text/css">
+        .nav1{font-size:20px;}
+        .img1{
+            width:100%;
+            height:300px;
+            position:relative;
+        }
+        .img1 .fa{
+            position: absolute;
+            top:10px;
+            right:15px;
+            color:red;
+        }
+        .fa-heart-o{
+            color:red;
+        }
+        .ad{
+            display:block;
+            width:100%;
+            height:100px;
+        }
+        .img1 p{
+
+            text-align: center;
+            border:1px solid #f8f8f8;
+        }
+        .img1 .jianjie{
+            position:absolute;
+            bottom:5px;
+            color:#eeeeee;
+        }
+        .guanggao{
+            width:100%;
+            height:100px;
+        }
+        .nav1{
+            width:50px;
+            background:#000000;
+
+        }
+        .app{
+            margin-left:4px;
+        }
+        .nav{
+            font-size:20px;
+            text-align:center;
+            line-height:30px;
+            color:#ffffff;
+        }
+        .ck{
+            background:#505a5b;
+        }
+        .img1 .jianjie{
+            position:absolute;
+            bottom:5px;
+            color:#eeeeee;
+        }
+        .new{
+            width:100%;
+            height:300px;
+            position:relative;;
+            overflow: hidden;
+        }
+        .new .fa{
+            position: absolute;
+            top: 10px;;
+            right:15px;
+        }
+    </style>
+</head>
+<body>
+<header class="ui-header ui-header-positive ui-border-b ui-row-flex ui-whitespace" style="position:absolute;background: #111;">
+    <a href="../index.html"><i class="fa fa-bars ui-col ui-col-10" ></i></a><h1 class="ui-col ui-col-80" style="color: #ffd700;">Go BiiiG or Go Home</h1><i class="fa fa-undo  ui-col-10" ></i>
+</header>
+<section class="ui-container">
+    <h1 style="text-align: center">最火热现场Top Live</h1>
+    <div class="img1">
+        <div class="ui-flex ui-flex-pack-end">
+            <i class="fa fa-heart-o "></i>
+        </div>
+        <div class="ui-flex ui-flex-pack-center jianjie">
+            <p class="jianjie2"></p>
+        </div>
+    </div>
+    <div >
+        <p style="color:#CCCCCC;font-szie:12px;"><span class="points">12387</span> likes ．<span class="comments">244</span>comments</p>
+        <div>
+            <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-heart-o"></span></button>
+            <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-comment-o"></span></button>
+            <button class="app" type="submit" style="float:right;"><img src="../images/facebook.png" width="40" height="40";/></button>
+            <button class="app" type="submit" style="float:right"><img src="../images/QQ.png"width="40" height="40";/></button>
+            <button class="app" type="submit" style="float:right"><img src="../images/weixin.png" width="40" height="40";/></button>
+        </div>
+    </div>
+    <div class="guanggao ui-flex ui-flex-pack-center">
+        <a href=""><h1 style="font-size: 32px;">廣告位</h1></a>
+    </div>
+    <!--浮动菜单-->
+    <ul class="ui-row-flex nav2">
+        <li class="ui-col ui-flex ui-flex-pack-center nav1 ck"><a class="nav" href="javascript: void(0)"><b>本周</b></a></li>
+        <li class="ui-col ui-flex ui-flex-pack-center nav1"><a class="nav" href="javascript: void(0)"><b>二周内</b></a></li>
+        <li class="ui-col ui-flex ui-flex-pack-center nav1"><a class="nav" href="javascript: void(0)"><b>一个月内</b></a></li>
+    </ul>
+    <ul class="Recently">
+    </ul>
+   <!-- 新人新图-->
+    <h1 style="text-align: center;color: #DD0000;"><span style="color: #CCCCCC;">BiiiG</span>新人新图 New PPL New Photo</h1>
+    <div class="new">
+        <div class="img2">
+        <div class="ui-flex ui-flex-pack-end">
+            <i class="fa fa-heart-o "></i>
+        </div>
+        <div class="ui-flex ui-flex-pack-center jianjie">
+            <p >主题 活动简介 地点</p>
+        </div>
+    </div>
+
+    </div>
+    <div >
+        <p style="color:#CCCCCC;font-szie:12px;"><span class="points1">12387</span> likes ．<span class="comments1">244</span>comments</p>
+
+        <div>
+            <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-arrow-up"></span></button>
+            <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-arrow-down"></span></button>
+            <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-comment-o"></span></button>
+            <button class="app" type="submit" style="float:right;"><img src="../images/facebook.png" width="40" height="40";/></button>
+            <button class="app" type="submit" style="float:right"><img src="../images/QQ.png" width="40" height="40";/></button>
+            <button class="app" type="submit" style="float:right"><img src="../images/weixin.png" width="40" height="40";/></button>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+
+    $(".nav1").click(function(){
+        $(".nav1").removeClass("ck");
+        $(this).addClass("ck");
+    });
+    $(function(){
+        var url1="../file/hot.json";
+        var adurl="../file/AD.json";
+        var url2="../file/recent.json";
+       var newurl="../file/newPhoto.json";
+        var method="get";
+        $.ajax({
+            url:url1,
+            type:method,
+            success:function(data){
+                $(".img1").css("background","url("+data.img+") no-repeat center");
+                $(".jianjie2").text(data.jianjie);
+                $(".points").text(data.dianzhanshu);//input
+                $(".comments").text(data.pinlun)//span button p
+            }
+        });
+        $.ajax({
+            url:adurl,
+            type:method,
+            success:function(data){
+                var path=data.img;
+                $(".guanggao").empty();
+                var html="";
+                html+='<a class="ad"  href='+data.url+'>' +
+                        '<img src='+path+' width="100%" height="100" >' +
+                        ' </a>';
+                $(".guanggao").html(html);
+            }
+        });
+        $.ajax({
+            url: url2,
+            type: method,
+            success: function (data) {
+                $(".Recently").empty();
+                var html = "";
+                $.each(data.active, function (index, content) {
+                    html += '<h1 style="text-align: center"><label class="ui-label" style="background:red;color: #ffffff;">' + content.date + '</label>' + content.theme + '</h1>' +
+                            '<div class="img1"><img src=' + content.poster + ' width=100% height="300"/> <div class="ui-flex ui-flex-pack-end">' +
+                            '<i class="fa fa-heart-o "></i></div> </div> <div >' +
+                            '<p style="color:#CCCCCC;font-szie:12px;">' + content.points + 'likes ．' + content.comments + 'comments</p><div>' +
+                            '<button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-heart-o"></span></button>' +
+                            '<button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-comment-o"></span></button>' +
+                            '<button class="app" type="submit" style="float:right;"><img src="../images/facebook.png" width="40" height="40";/></button>' +
+                            '<button class="app" type="submit" style="float:right"><img src="../images/QQ.png" width="40" height="40";/></button>' +
+                            '<button class="app" type="submit" style="float:right"><img src="../images/weixin.png" width="40" height="40";/></button>' +
+                            '</div> </div>' +
+                            '<div style="width:100%;clear: both;"></div>';
+                });
+                $(".Recently").html(html);
+            }
+        });
+        $.ajax({
+            url:newurl,
+            type:method,
+            success:function(data){
+                $(".points1").text(data.points);
+                $(".comments1").text(data.comments);
+                $(".new").empty();
+                var html="";
+                $.each(data.newphoto,function(index,content){
+                    html+='<div class="img2"><img src='+content.img+' width=100%  height="300"></div>' +
+                            '<i class="fa fa-heart-o "></i>';
+                });
+                $(".new").html(html);
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

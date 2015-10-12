@@ -4,3 +4,4 @@ webshared_admin/node_modules
 webshared_server/.idea
 webshared_client/.idea
 webshared_admin/.idea
+webshared_client/bower_components

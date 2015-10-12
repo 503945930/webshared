@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../bower_components/frozenui/css/frozen.css"/>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script  type="text/javascript" src="../js/frozen.js"></script>
+    <script src="../js/deferred.js"></script>
+    <script src="../js/callbacks.js"></script>
+
+    <title>Comments</title>
+    <style type="text/css">
+        *{margin:0px;
+        padding:0px;}
+         .shuoshuo{
+             width:100%;
+             height:250px;
+         }
+         .pinglun{
+             width:100%;
+             margin-top:10px;
+             list-style-type: none;
+         }
+         .touxiang{
+            width:60px;
+            height:60px;
+            margin-right:8px;;
+
+        }
+        .plxq{
+            margin-left:52px;
+            font-size:12px;
+        }
+         .plxq .time{
+             color:#CCCCCC;
+         }
+        .conment{
+           margin-top:2px;
+        }
+       #aa,#aa1 {
+           margin-left:10%;
+           min-width:150px;
+          width:60%;
+           height: 30px;
+
+       }
+        .bb,.bb1{
+            width:20%;
+            height:30px;
+            background:#4492C9;
+            border-radius: 5px;
+            border:2px solid #4492C9;
+            font-size:18px;
+            line-height:30px;
+            text-align:center;
+            color: #ffffff;
+        }
+        .huifu{
+           color:#CCCCCC;
+            font-weight:500;
+        }
+        .PLGR{
+            display: none;
+        }
+        .erjipinglun{
+          margin-left:50px;
+        }
+        li{
+            margin-top:5px;
+            width:100%;
+        }
+        p{
+            word-break:break-all;
+        }
+        .fa-heart,.fa-heart-o{
+            margin-right: 15px;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<header class="ui-header ui-header-positive ui-border-b ui-row-flex ui-whitespace" style="position:absolute;background:#111">
+    <h2 class="back">Colse</h2><h1 class="ui-col ui-col-80" style="color: #ffd700;">Go BiiiG or Go Home</h1><i class="  ui-col-10" ></i>
+</header>
+<section class="ui-container">
+    <div class="shuoshuo">
+    </div>
+   <!--<p style="margin-left:15px;">Reply <i style="margin-left: 5px;" class="fa fa-heart-o"></i></p>-->
+    <ul class="pinglun" >
+
+    </ul>
+</section>
+
+<div class="PL" style="margin-bottom: 15px;">
+    <input type="text" id="aa" placeholder="我也要评论">
+    <button class="bb ui-btn">评论</button>
+</div>
+<div class="PLGR">
+    <input type="text" id="aa1">
+    <button class="bb1 ui-btn">评论</button>
+</div>
+<script src="../js/pingjia.js"></script>
+<script src="../js/moment.js"></script>
+<script>
+    $(".back").click(function(){
+        history.back();
+    });
+</script>
+</body>
+</html>

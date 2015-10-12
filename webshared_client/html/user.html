@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../bower_components/frozenui/css/frozen.css"/>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+
+    <!--<script  type="text/javascript" src="../js/frozen.js"></script>-->
+    <title>user</title>
+    <style type="text/css">
+        .geren{width:100%;
+        height:270px;
+        background:#000000;position:relative;
+        }
+        .touxiang{
+            position: absolute;
+            top:20px;
+            width:115px;
+            height:118px;
+            left:50%;
+            margin-left:-57px;
+        }
+          .ziliao{
+              position:absolute;
+              top:130px;
+          }
+       .user-live{
+           width:100%;
+           height:310px;
+           list-style-type: none;
+           overflow: hidden;
+       }
+       .user-live li{
+           width:100%;
+           height:310px;
+       }
+        .hotimg,.watchlive{
+              width:100%;
+              list-style-type: none;
+
+          }
+
+        ul .aa{
+            width:60px;
+            height:60px;
+            margin-left:3px;
+            float:left}
+        ul .bb{
+            width:50px;
+            height:50px;
+            margin-left:3px;
+            float:left}
+        .live{
+            position:relative;
+
+        }
+    </style>
+</head>
+<body>
+<header class="ui-header ui-header-positive ui-border-b ui-row-flex ui-whitespace" style="position:absolute;background:#111;">
+    <a href="../index.html"><i class="fa fa-bars ui-col ui-col-10" ></i></a><h1 class="ui-col ui-col-80" style="color:#ffd700">Go BiiiG or Go Home</h1><i class="fa fa-undo  ui-col-10" ></i>
+</header>
+<section class="ui-container">
+    <h1><b>现场图片 Live Post</b></h1><hr/>
+    <div style="width:100%;height:310px;" class="live-post">
+        <ul class="user-live">
+
+        </ul>
+    </div>
+         <div class="geren">
+
+             <div class="touxiang ui-center"></div>
+             <div class="ziliao ui-center">
+                 <p style="color:red;text-align:center"><span class="live"></span>Live. <span class="post"></span>Post</p>
+                 <p style="background:#ffffff;color:#CCCCCC;font-size:12px;text-align:center"><span class="points"></span>likes.<span class="comment">244</span>comments</p>
+                 <p style="color:#ffffff;font-size:30px;text-align:center" class="name">kipi12899</p>
+                 <p style="color:#aaaaaa;text-align:center;font-size:13px;">My Funny Collection</p>
+             </div>
+         </div>
+
+    <div class="row" style="height:60px;">
+
+        <div style="overflow: hidden;" >
+            <ul class="hotimg ui-justify" >
+
+            </ul>
+        </div>
+        <hr/>
+    </div>
+    <h1 style="margin-top:10px;">看现场 Watch Live</h1>
+    <hr/>
+    <div class="ui-row-flex " style="height:60px;">
+
+        <div style="overflow: hidden;" >
+            <ul class="watchlive ui-justify">
+
+            </ul>
+        </div>
+
+    </div>
+</section>
+<script src="../js/user.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+
+    <title>二维码</title>
+    <style type="text/css">
+
+        html,body{
+            min-height:500px;
+            width:100%;
+            height:100%;
+             margin:0;
+            padding:0;
+        }
+          .erweima{
+              position: fixed;
+              bottom: 30px;
+              left: 10px;
+         }
+        .img{
+            float: right;
+            overflow: hidden;
+            height:100%;
+            margin:0;
+            padding:0;
+        }
+        .row{
+            margin: 0;
+            height:100%;
+        }
+        .images{
+            list-style-type: none;
+            width:100%;
+            height:100%;
+            padding:0px;
+            margin:0px;
+            background-size: 100% 100% !important;
+        }
+        .images li{
+            display: block;
+            width:100%;
+             height:100%;
+            background-size:100% 100% !important;
+         }
+
+        .head{
+             margin-top:15px;
+        }
+        .poster{
+            height:100%;
+            width:96%;
+            margin-left:2%;
+            background-size: 100% 100% !important;
+        }
+    </style>
+</head>
+<body >
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 " style="height:100%">
+            <div class="poster" >
+            <div class="erweima ">
+                <div class="er" ></div>
+            </div> </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 img" >
+             <ul class="images">
+                 <!--<li ><div class="head col-lg-2 col-lg-offset-10" ><img class="img-circle" src="../images/huoyue/01.jpg" width="100%"/></div> </li>-->
+             </ul>
+        </div>
+    </div>
+
+</body>
+<script src="../js/erweima.js"></script>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="bower_components/frozenui/css/frozen.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="/css/hot.css"/>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/frozen.js"></script>
+    <script type="text/javascript" src="js/jquery.smint.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=boba3kxFx3itcZDSKoB5whCv"></script>
+    <script src="js/weixin.js"></script>
+    <script src="js/deferred.js"></script>
+    <script src="js/callbacks.js"></script>
+    <script src="js/moment.js"></script>
+</head>
+
+<body onLoad="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+<header class="ui-header ui-header-positive ui-border-b ui-row-flex ui-whitespace" style="position:absolute;background:#111">
+   <i class="fa fa-bars ui-col ui-col-10" ></i><h1 class="ui-col ui-col-80">Go BiiiG or Go Home</h1><i class="refresh fa fa-undo  ui-col-10" ></i>
+</header>
+<section class="ui-container">
+
+    <h1  style="height:1.5em;text-align: center;line-height: 1.5em;">最火热现场Top Live</h1>
+     <div id="img1" >
+         <ul class="lunbo">
+
+     </ul>
+         <div class="lunbo-nav ui-center">
+         <ul class="ui-row-flex  lunbo-nav-ul">
+             <li><a href="javascript:void(0)" class="bg" ><i style="display: none;">1</i></a></li>
+             <li><a href="javascript:void(0)"  ><i></i></a></li>
+             <li><a href="javascript:void(0)"  ><i></i></a></li>
+             <li><a href="javascript:void(0)"  ><i></i></a></li>
+             <li><a href="javascript:void(0)"  ><i></i></a></li>
+         </ul>
+         </div>
+    </div>
+    <div class="guanggao ui-flex ui-flex-pack-center">
+
+    </div>
+
+    <!--浮动菜单-->
+    <div class="submenu">
+<div class="inner">
+    <ul class="ui-row-flex  ui-tab-nav ">
+        <li class="ui-col ui-flex ui-flex-pack-center nav1 HOT  ck"><a class="nav" href="javascript: void(0)">Hot</a></li>
+        <li class="ui-col ui-flex ui-flex-pack-center nav1 NOW"><a class="nav" href="javascript: void(0)">Now</a></li>
+        <li class="ui-col ui-flex ui-flex-pack-center nav1 UPCOMING"><a class="nav" style="font-size:20px;" href="javascript: void(0)">Upcoming</a></li>
+    </ul></div></div>
+        <div class="Hot " style="width:100%">
+            <h1 class="title1" style="text-align: center" ><a href="javascript: void(0)" >
+                <b class="seclected2" style="line-height: 2.5em">火热现场 Seclected</b> <span class="fa fa-plus-square-o"></span></a></h1>
+            <div id="Hotjj2">
+                <div class="details">
+                    <p ><span style="color:red">主办方：</span> <span class="Sponsor2"> 学校</span></p>
+                    <p ><span style="color:red">活动主题：</span> <span class="theme2"> 开学了</span></p>
+                    <p ><span style="color:red"> 活动时间：</span><span class="time2">9月1日</span></p>
+                    <p ><span style="color:red"> 活动简介：</span><span class="brief2"></span></p>
+                    <p ><span style="color:red"> 地点：</span><span class="place2">各大学校</span> </p>
+                </div>
+            </div>
+            <div id="img2">
+                <div class="img-img">
+                    <ul class="poster2"></ul>
+                </div>
+                <div class="ui-flex ui-flex-pack-end">
+                    <i class="fa fa-heart-o "></i>
+
+                </div>
+                <div class="ui-flex ui-flex-pack-center jianjie">
+                    <p class="jianjie2" >2015 Apple 活动简介 地点</p>
+                </div>
+            </div>
+            <div >
+                <p style="color:#CCCCCC;font-szie:12px;"><span class="zhan2"></span> likes ．<span class="pinlun2"></span>comments</p>
+                <div>
+                    <button class="dianzhan2 ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-heart-o love2"></span></button>
+                    <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><a href="#" onclick="huodong2()" ><span class="fa fa-comment-o"></span></a></button>
+                    <!--<a class="app" style="float: right;" target="_blank" href="http://www.facebook.com/share.php?u=分享网址">
+                        <img title="分享到facebook！" src="images/facebook.png"  width="40" height="40" /></a>-->
+                   <!-- <a class="app" style="float: right;"  onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));return false;" title="分享到QQ空间">
+                        <img src="images/QQ.png" width="40" height="40" alt="分享到QQ空间" /></a>-->
+                   <!-- <button class="app" type="submit" style="float:right"><img src="images/weixin.png"width="40" height="40";/></button>-->
+                    <a class="app" href="javascript:void(0);" style="float: right;margin-right:15px;" href="javascript:void(0);"
+                       onclick="share(activity2)" title="分享到QQ空间"><i class="fa fa-share-alt fa-2x"></i></a>
+                </div>
+            </div>
+            <div style="clear: both;"></div><hr>
+            <h1 style="text-align: center" ><a href="javascript: void(0)" target="myiframe3"><b class="seclected3">火热现场 Seclected</b>
+                <span class="fa fa-plus-square-o"></span></a></h1>
+            <div id="Hotjj3">
+                <div class="details">
+                    <p ><span style="color:red">主办方：</span> <span class="Sponsor3"> 学校</span></p>
+                    <p ><span style="color:red">活动主题：</span> <span class="theme3"> 开学了</span></p>
+                    <p ><span style="color:red"> 活动时间：</span><span class="time3">9月1日</span></p>
+                    <p ><span style="color:red"> 活动简介：</span><span class="brief3"></span></p>
+                    <p ><span style="color:red"> 地点：</span><span class="place3">各大学校</span> </p>
+                </div>
+            </div>
+            <div id="img3">
+                <div class="img-img">
+                <ul class="poster3"></ul></div>
+                <div class="ui-flex ui-flex-pack-end">
+                    <i class="fa fa-heart-o "></i>
+
+                </div>
+                <div class="ui-flex ui-flex-pack-center jianjie">
+                    <p class="jianjie3">2015 Apple 活动简介 地点</p>
+                </div>
+            </div>
+            <div >
+                <p style="color:#CCCCCC;font-szie:12px;"><span class="zhan3"></span> likes ．<span class="pinlun3">244</span>comments</p>
+
+                <div>
+                    <button class="dianzhan3 ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-heart-o love3"></span></button>
+                    <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><a href="#" onclick="huodong3()" ><span class="fa fa-comment-o"></span></a></button>
+                   <!-- <a class="app" style="float: right;" target="_blank" href="http://www.facebook.com/share.php?u=分享网址">
+                        <img title="分享到facebook！" src="images/facebook.png"  width="40" height="40" /></a>
+                    <a class="app" style="float: right;" href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));return false;" title="分享到QQ空间">
+                        <img src="images/QQ.png" width="40" height="40" alt="分享到QQ空间" /></a>
+                    <button class="app" type="submit" style="float:right"><img src="images/weixin.png"width="40" height="40"/></button>-->
+                    <a class="app" style="float: right;margin-right:15px;" href="javascript:void(0);" onclick="share(activity3)" title="分享到QQ空间"><i class="fa fa-share-alt fa-2x"></i></a>
+                </div>
+            </div>
+            <div style="clear: both;"></div><hr>
+            <h1  style="text-align: center" ><a href="javascript: void(0)" target="myiframe4">
+                <b class="seclected4">火热现场 Seclected</b> <span class="fa fa-plus-square-o"></span></a></h1>
+            <div id="Hotjj4">
+                <div class="details">
+                    <p ><span style="color:red">主办方：</span> <span class="Sponsor4"> 学校</span></p>
+                    <p ><span style="color:red">活动主题：</span> <span class="theme4"> 开学了</span></p>
+                    <p ><span style="color:red"> 活动时间：</span><span class="time4">9月1日</span></p>
+                    <p ><span style="color:red"> 活动简介：</span><span class="brief4"></span></p>
+                    <p ><span style="color:red"> 地点：</span><span class="place4">各大学校</span> </p>
+
+                </div>
+            </div>
+            <div id="img4">
+                <div class="img-img">
+                <ul class="poster4"></ul></div>
+                <div class="ui-flex ui-flex-pack-end">
+                    <i class="fa fa-heart-o "></i>
+
+                </div>
+                <div class="ui-flex ui-flex-pack-center jianjie">
+                    <p class="jianjie4">2015 Apple 活动简介 地点</p>
+                </div>
+            </div>
+            <div >
+                <p style="color:#CCCCCC;font-szie:12px;"><span class="zhan4"></span> likes ．<span class="pinlun4">244</span>comments</p>
+
+                <div >
+                    <button class="dianzhan4 ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-heart-o love4"></span></button>
+                    <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><a href="#" onclick="huodong4()" ><span class="fa fa-comment-o"></span></a></button>
+                    <!--<a class="app" style="float: right;" target="_blank" href="http://www.facebook.com/share.php?u=分享网址">
+                        <img title="分享到facebook！" src="images/facebook.png"  width="40" height="40" /></a>
+                    <a class="app" style="float: right;" href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));return false;" title="分享到QQ空间">
+                        <img src="images/QQ.png" width="40" height="40" alt="分享到QQ空间" /></a>
+                    <button class="app" type="submit" style="float:right"><img src="images/weixin.png" width="40" height="40";/></button>-->
+                    <a class="app" style="float: right;margin-right:15px;" href="javascript:void(0);" data-activity=acyivity4 onclick="share(activity4)" title="分享到QQ空间"><i class="fa fa-share-alt fa-2x"></i></a>
+                </div>
+            </div>
+            <div style="clear: both;"></div><hr>
+            <h1  style="text-align: center" ><a href="javascript: void(0)" target="myiframe5">
+                <b class="seclected5">火热现场 Seclected</b> <span class="fa fa-plus-square-o"></span></a></h1>
+            <div id="Hotjj5">
+                <div class="details">
+                    <p ><span style="color:red">主办方：</span> <span class="Sponsor5"> 学校</span></p>
+                    <p ><span style="color:red">活动主题：</span> <span class="theme5"> 开学了</span></p>
+                    <p ><span style="color:red"> 活动时间：</span><span class="time5">9月1日</span></p>
+                    <p ><span style="color:red"> 活动简介：</span><span class="brief5"></span></p>
+                    <p ><span style="color:red"> 地点：</span><span class="place5">各大学校</span> </p>
+
+                </div>
+            </div>
+            <div id="img5">
+                <div class="img-img">
+                <ul class="poster5"></ul></div>
+                <div class="ui-flex ui-flex-pack-end">
+                    <i class="fa fa-heart-o "></i>
+
+                </div>
+                <div class="ui-flex ui-flex-pack-center jianjie">
+                    <p class="jianjie5">2015 Apple 活动简介 地点</p>
+                </div>
+            </div>
+            <div >
+                <p style="color:#CCCCCC;font-szie:12px;"><span class="zhan5"></span> likes ．<span class="pinlun5">244</span>comments</p>
+
+                <div >
+                    <button class="dianzhan5 ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-heart-o love5"></span></button>
+                    <button class="ui-border-radius" type="submit" style="width:55px;height:40px;float:left"><a href="#" onclick="huodong5()" ><span class="fa fa-comment-o"></span></a></button>
+                    <!--<a class="app" style="float: right;" target="_blank" href="http://www.facebook.com/share.php?u=分享网址">
+                        <img title="分享到facebook！" src="images/facebook.png"  width="40" height="40" /></a>
+                    <a class="app" style="float: right;" href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));return false;" title="分享到QQ空间">
+                        <img src="images/QQ.png" width="40" height="40" alt="分享到QQ空间" /></a>
+                    <button class="app" type="submit" style="float:right"><img src="images/weixin.png" width="40" height="40";/></button>-->
+                    <a class="app" style="float: right;margin-right:15px;" href="javascript:void(0);" data-activity=acyivity5 onclick="share(activity5)" title="分享到QQ空间"><i class="fa fa-share-alt fa-2x"></i></a>
+                </div>
+            </div>
+            <div style="clear: both;"></div><hr>
+            <h1  style="text-align: center" ><a href="javascript: void(0)" target="myiframe6">
+                <b class="seclected6">火热现场 Seclected</b> <span class="fa fa-plus-square-o"></span></a></h1>
+            <div id="Hotjj6">
+                <div class="details">
+                    <p ><span style="color:red">主办方：</span> <span class="Sponsor6"> 学校</span></p>
+                    <p ><span style="color:red">活动主题：</span> <span class="theme6"> 开学了</span></p>
+                    <p ><span style="color:red"> 活动时间：</span><span class="time6">9月1日</span></p>
+                    <p ><span style="color:red"> 活动简介：</span><span class="brief6"></span></p>
+                    <p ><span style="color:red"> 地点：</span><span class="place6">各大学校</span> </p>
+                   <!-- <p ><span style="color:red">浏览量：</span><span class="brows6">不计其数</span>
+                        <span style="color:red;margin-left: 20px;"> 赞：</span><span class="zambia6">0</span></p>-->
+                </div>
+            </div>
+            <div id="img6">
+                <div class="img-img">
+                <ul class="poster6"></ul></div>
+                <div class="ui-flex ui-flex-pack-end">
+                    <i class="fa fa-heart-o zhan" style="color:red;"></i>
+
+                </div>
+                <div class="ui-flex ui-flex-pack-center jianjie">
+                    <p class="jianjie6">2015 Apple 活动简介 地点</p>
+                </div>
+            </div>
+            <div >
+                <p style="color:#CCCCCC;font-szie:12px;"><span class="zhan6"></span> likes ．<span class="pinlun6">244</span>comments</p>
+                <div>
+                    <button class="ui-border-radius dianzhan6" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-heart-o love6"></span></button>
+                    <button class="ui-border-radius" style="width:55px;height:40px;float:left" type="submit" onclick="huodong6()" ><span class="fa fa-comment-o"></span> </button>
+                   <!-- <a class="app" style="float: right;" target="_blank" href="http://www.facebook.com/share.php?u=分享网址">
+                        <img title="分享到facebook！" src="images/facebook.png"  width="40" height="40" /></a>
+                    <a class="app" style="float: right;" href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));return false;" title="分享到QQ空间">
+                        <img src="images/QQ.png" width="40" height="40" alt="分享到QQ空间" /></a>
+                    <button class="app" type="submit" style="float:right"><img src="images/weixin.png" width="40" height="40";/></button>-->
+                    <button class="app" style="float: right;margin-right:15px;"  href="javascript:void(0);" data-activity="activity6"  onclick="share(activity6)"><i class="fa fa-share-alt fa-2x"></i></button>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="Now" style="width:100%; display:none;">
+        <div id="allmap" style="width:96%;height:250px;margin-left:2%;border: 2px solid #CCCCCC;">
+
+        </div >
+        <ul class="near">
+
+        </ul>
+        <!--<div class="ui-border-radius ui-flex ui-flex-pack-center more"><h1 style="line-height:50px;"><b>更多。。。</b></h1></div>-->
+    </div>
+       <!--// upcoming-->
+        <div class="upcoming" style="width:100%;display:none;">
+
+            <!--浮动菜单-->
+            <div class="submenu2">
+                <div class="inner">
+            <ul class="ui-row-flex nav3   ui-tab-nav" style="height:30px;">
+            <li class="ui-col ui-flex ui-flex-pack-center nav-two nav-two-one ck" style="height: 30px;line-height: 30px;"><a class="nav2" href="javascript: void(0)"><b>本周</b></a></li>
+            <li class="ui-col ui-flex ui-flex-pack-center nav-two nav-two-two" style="height: 30px;line-height: 30px;"><a class="nav2" href="javascript: void(0)"><b>二周内</b></a></li>
+            <li class="ui-col ui-flex ui-flex-pack-center nav-two nav-two-three" style="height: 30px;line-height: 30px;"> <a class="nav2" href="javascript: void(0)"><b>一个月内</b></a></li>
+            </ul></div></div>
+     <div style="clear: both"></div>
+        <ul class="recently" style="margin-top: 70px;">
+          <!-- <div style="width: 100%;height:300px;background:#478fca;"></div>-->
+        </ul>
+        </div>
+        <!-- 新人新图-->
+        <!--<h1 style="color: #DD0000;">新人新图 New PPL New Photo</h1>
+        <div class="new">
+            <div class="img2">
+                <div class="ui-flex ui-flex-pack-end">
+                    <i class="fa fa-heart-o "></i>
+                </div>
+            </div>
+        </div>
+        <div >
+            <p style="color:#CCCCCC;font-szie:12px;"><span class="points1"></span> likes ．<span class="comments1">244</span>comments</p>
+            <div>
+                <button class="ui-border-radius dianzhan1" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-heart-o love1"></span></button>
+                <button class="ui-border-radius" onclick="huodong2()" type="submit" style="width:55px;height:40px;float:left"><span class="fa fa-comment-o"></span></button>
+                &lt;!&ndash;<a class="app" style="float: right;" target="_blank" href="http://www.facebook.com/share.php?u=分享网址">
+                    <img title="分享到facebook！" src="images/facebook.png"  width="40" height="40" /></a>
+                <a class="app" style="float: right;" href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href));return false;" title="分享到QQ空间">
+                    <img src="images/QQ.png" width="40" height="40" alt="分享到QQ空间" /></a>
+                <button class="app" type="submit" style="float:right"><img src="../images/weixin.png" width="40" height="40";/></button>&ndash;&gt;
+               &lt;!&ndash; <a class="app" style="float: right;margin-right:15px;" href="javascript:void(0);"><i class="fa fa-share-alt fa-2x"></i></a>&ndash;&gt;
+            </div>
+        </div>-->
+
+
+</section><!--ui-container-->
+<div id="tishi"  onclick="$('#tishi').css('display','none')" style="display:none;position: absolute;top: 0;background: #000;width:100%;height:450%;opacity: 0.9;z-index: 2000">
+    <img style="position: fixed; top: 0;" src="images/tishi.png" alt="" width="100%">
+</div>
+
+
+<script src="js/activities.js"></script>
+<script src="js/recentTime.js"></script>
+<script src="js/indexshare.js"></script>
+<script src="js/GPS.js"></script>
+
+<script src="js/click.js"></script>
+<script>
+
+    var a=0;
+    var b=0;
+    var c=0;
+    var d=0;
+    var e=0;
+    var f=0;
+    function auto1(){
+        a++;
+
+        if(a>$(".poster2 li").length-1){
+            a=0;
+        }
+        $(".poster2 li").hide();
+        $(".poster2 li").eq(a).show();
+    }
+    setInterval("auto1()",5000);
+    function auto2(){
+        b++;
+        if(b>$(".poster3 li").length-1){
+            b=0;
+        }
+        $(".poster3 li").hide();
+        $(".poster3 li").eq(b).show();
+    }
+    setInterval("auto2()",5000);
+    function auto3(){
+        d++;
+        if(d>$(".poster4 li").length-1){
+            d=0;
+        }
+        $(".poster4 li").hide();
+        $(".poster4 li").eq(d).show();
+    }
+    setInterval("auto3()",5000);
+    function auto4(){
+        e++;
+        if(e>$(".poster5 li").length-1){
+            e=0;
+        }
+        $(".poster5 li").hide();
+        $(".poster5 li").eq(e).show();
+    }
+    setInterval("auto4()",5000);
+    function auto5(){
+        f++;
+        if(f>$(".poster6 li").length-1){
+            f=0;
+        }
+        $(".poster6 li").hide();
+        $(".poster6 li").eq(f).show();
+    }
+    setInterval("auto5()",5000);
+
+</script>
+</body>
+</html>

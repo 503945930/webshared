@@ -1,0 +1,9 @@
+{
+  "img":"../images/06.jpg",
+  "comments":[
+    {"touxiang":"../images/huoyue/01.jpg","name":"doubi","comment":"这个不错！","img":"","time":"1d","points":"5"},
+    {"touxiang":"../images/huoyue/02.jpg","name":"xiaodoubi","comment":"","img":"../images/04.jpg","time":"1d","points":"10"},
+    {"touxiang":"../images/huoyue/03.jpg","name":"doubi","comment":"很好看，值得！","img":"","time":"23h","points":"2"},
+    {"touxiang":"../images/huoyue/04.jpg","name":"doubi","comment":"这都什么鬼！","img":"../images/04.jpg","time":"2d","points":"7"}
+  ]
+}
