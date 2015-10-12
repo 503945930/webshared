@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+
+    $(function () {
+
+
+        var test = {
+            "name": "q", "address": "w", "time": {
+                "0": "e", "1": "r"
+            }
+            ,
+            "info": {
+                "theme": "t", "sponsor": "4", "brief": "666"
+            }
+            ,
+            "images": {
+                "ad": ["5", "/upload/activity/0bd090f79062e6422637b59c3787d2fb6f279811.jpg"],
+                "poster": ["6", "/upload/activity/ce07470d12cae6fc39655bf7b33cd2d94e5b7c82.jpg"]
+            }
+            ,
+            "statistics": [0, 0, 0]
+        };
+        for (var i = 10; i < 100; i++) {
+            var arr = {
+                num: i,//序号 备注：手动排序
+                name: "唱歌" + i,//名称
+                address: "北京",//地址
+                time: ['2015-09-12', '2015-09-12'],//时间  数组  开始时间和结束时间
+                info: {theme: "主题", sponsor: "主办方", brief: "简介"},//另外的信息  主题、主办方、简介
+                images: {ad: ['/images/guanggao/02.jpg', 'www.baidu.com'], poster: ['/images/06.jpg', 'www.baidu.com']},//图片  广告、海报
+                creatInfo: {perple: "admin"},//创建信息  创建时间、创建人
+                updateInfo: {perple: "admin"},//修改信息  修改时间、修改人
+                states: 1//状态
+            };
+            $.ajax({
+                url: "http://localhost:5000/v1/activities",
+                type: 'post',
+                data: arr,
+                ContentType: "application/json"
+            }).done(function (result) {
+                console.log(result);
+            })
+
+        }
+
+
+    })
+
+</script>
+
+<a href=''>真棒！ 现在也来亮你的朋友圈 Well done!  Last step: show off to your friends！</a>
+</body>
+</html>

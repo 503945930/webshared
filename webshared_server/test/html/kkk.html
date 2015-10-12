@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+
+</body>
+
+<script>
+    var a = $.ajax({
+        url: "http://gobiiig.com/v1/activities(193fa854-dd72-45c4-bd90-bf98d0b91810)",
+        type: 'put',
+        data: {"statistics.browse": 111}
+    });
+
+    a.then(function (result) {
+        console.log(result);
+    })
+</script>
+
+
+</html>

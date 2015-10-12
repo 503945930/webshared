@@ -1,0 +1,28 @@
+{
+  "name": "admintem",
+  "version": "1.0.0",
+  "description": "admin Tem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "admin",
+    "Tem"
+  ],
+  "dependencies": {
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "gm": "^1.18.1",
+    "mkdirp": "^0.5.1",
+    "morgan": "^1.6.1",
+    "multiparty": "^4.1.2",
+    "node-odata": "^0.7.6",
+    "request": "^2.63.0",
+    "wechat": "^2.0.1",
+    "wechat-api": "^1.11.0",
+    "wechat-oauth": "^1.1.0"
+  },
+  "author": "wy",
+  "license": "ISC"
+}

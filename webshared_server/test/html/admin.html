@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+
+
+    $(function () {
+        var arr = {
+            name: "admintroaa",
+            loginName: "admin",//用户名
+            password: "admin",
+            email: "",
+            token: ""
+        };
+
+        $.ajax({
+            url: "http://localhost:5000/v1/admins",
+            type: 'post',
+            data: arr,
+            ContentType:"application/json"
+        }).done(function (result) {
+            console.log(result);
+        })
+
+
+
+    })
+
+</script>
+</body>
+</html>
