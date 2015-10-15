@@ -116,8 +116,8 @@ angular.module("activity-edit", ["resource.activities"]).config([
                     }, entity, function (data) {
 
                         messager.success("modify successfully.");
-                       // return $location.path("/activity");
-                        var promise = $http({
+                        return $location.path("/activity");
+                        /*var promise = $http({
                             method:"post",
                             url:""+config.url.api+"/qrcode",
                             data:{"id":data.id}
@@ -126,7 +126,7 @@ angular.module("activity-edit", ["resource.activities"]).config([
                         promise.then(function(resp){
                             messager.success("modify successfully.");
                             return $location.path("/activity");
-                        }, function(resp){})
+                        }, function(resp){})*/
                     });
                 }
             };
