@@ -47,7 +47,7 @@ server.set('prefix', "v1");
 
 var app = express();
 //端口
-app.set('port', 5000);
+app.set('port', 80);
 app.use(express.query());
 
 
@@ -63,6 +63,7 @@ app.use(express.query());
 server.use(app);
 server.use(require('./odata/resources/user'));
 server.use(require('./odata/resources/comment'));
+server.use(require('./odata/resources/piccomment'));
 server.use(require('./odata/resources/activity'));
 server.use(require('./odata/resources/admin'));
 server.use(require('./odata/resources/qrcode'));

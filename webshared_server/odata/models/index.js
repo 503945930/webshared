@@ -5,6 +5,7 @@ module.exports={
     users: require('./user'),
     activities: require('./activity'),
     comments: require('./comment'),
+    piccomments: require('./piccomment'),
     pictures: require('./picture'),
     admins: require('./admin'),
     qrcodes:require('./qrcode'),
