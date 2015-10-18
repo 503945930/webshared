@@ -17,6 +17,7 @@ module.exports = {
         country: String,
         headimgurl: String
     },
+    statistics:{praise:{type:Number,default:0},comment:{type:Number,default:0}},
     creatInfo: {createTime: {type: Date, default: Date.now}, perple: String},//创建信息  创建时间、创建人
     updateInfo: {createTime: {type: Date, default: Date.now}, perple: String},//修改信息  修改时间、修改人
     states: {type: Boolean, default: true}//状态
