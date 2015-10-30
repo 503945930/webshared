@@ -226,10 +226,10 @@ router.all('/wechat', wechat(config, function (req, res, next) {
 
 
                     if(use.userInfo.language=='zh_CN'){
-                        res.reply("<a href='http://120.24.61.90:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'>真棒！ 现在也来亮瞎你的朋友圈！</a>");
+                        res.reply("<a href='http://gobiiig.com:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'>真棒！ 现在也来亮瞎你的朋友圈！</a>");
                     }
                     else{
-                        res.reply("<a href='http://120.24.61.90:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'> Well done!  Last step: show off to your friends！</a>");
+                        res.reply("<a href='http://gobiiig.com:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'> Well done!  Last step: show off to your friends！</a>");
                     }
 
                 });
