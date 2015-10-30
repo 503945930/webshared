@@ -47,7 +47,7 @@ server.set('prefix', "v1");
 
 var app = express();
 //端口
-app.set('port', 80);
+app.set('port', 4000);
 app.use(express.query());
 
 

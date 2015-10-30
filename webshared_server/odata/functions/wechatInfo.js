@@ -47,9 +47,23 @@ router.all('/wechat', wechat(config, function (req, res, next) {
                 q.save(function (err) {
                     console.log(err);
                 });
-                res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG！\n" +
-                    "Welcome to 【" + doc.info.theme + "】 " + doc.name + ", " +
-                    "Selfie, upload, you are the BiiiG one on the  Screen!");
+
+                resources.users.findOne({openid: message.FromUserName}, function (err, use) {
+
+
+                    if(use.userInfo.language=='zh_CN'){
+                        res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG");
+                    }
+                    else{
+                        res.reply("Welcome to 【" + doc.info.theme + "】 " + doc.name + ", " +
+                            "Selfie, upload, you are the BiiiG one on the  Screen!");
+                    }
+
+                });
+
+
+
+
 
                 /* resources.qrcodes.save({sceneid: message.EventKey, user: message.FromUserName}, function (errr, docc) {
                  if (err) return res.send(errr);
@@ -78,9 +92,18 @@ router.all('/wechat', wechat(config, function (req, res, next) {
                             var q = new resources.qrcodes({sceneid: scene, user: message.FromUserName, activity: doc.id});
 
                             q.save();
-                            res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG！\n" +
+                            //res.reply(use.userInfo.language);
+                            if(use.userInfo.language=='zh_CN'){
+                                res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG");
+                            }
+                            else{
+                                res.reply("Welcome to 【" + doc.info.theme + "】 " + doc.name + ", " +
+                                    "Selfie, upload, you are the BiiiG one on the  Screen!");
+                            }
+
+                            /*res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG！\n" +
                                 "Welcome to 【" + doc.info.theme + "】 " + doc.name + " , " +
-                                "Selfie, upload, you are the BiiiG one on the  Screen!");
+                                "Selfie, upload, you are the BiiiG one on the  Screen!");*/
                         });
 
 
@@ -98,7 +121,7 @@ router.all('/wechat', wechat(config, function (req, res, next) {
 
                             request('https://api.weixin.qq.com/cgi-bin/user/info?access_token='+JSON.parse(body).access_token+'&openid='+message.FromUserName, function (error, response, result) {
                                 if (!error && response.statusCode == 200) {
-                                    console.log(result)
+                                    console.log(result);
 
                                     result=JSON.parse(result);
                                     console.log(result);
@@ -141,9 +164,16 @@ router.all('/wechat', wechat(config, function (req, res, next) {
                                                 var q = new resources.qrcodes({sceneid: scene, user: message.FromUserName, activity: doc.id});
 
                                                 q.save();
-                                                res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG！\n" +
+                                                if(use.userInfo.language=='zh_CN'){
+                                                    res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG");
+                                                }
+                                                else{
+                                                    res.reply("Welcome to 【" + doc.info.theme + "】 " + doc.name + ", " +
+                                                        "Selfie, upload, you are the BiiiG one on the  Screen!");
+                                                }
+                                                /*res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG！\n" +
                                                     "Welcome to 【" + doc.info.theme + "】 " + doc.name + " , " +
-                                                    "Selfie, upload, you are the BiiiG one on the  Screen!");
+                                                    "Selfie, upload, you are the BiiiG one on the  Screen!");*/
                                             });
                                         });
 
@@ -190,8 +220,19 @@ router.all('/wechat', wechat(config, function (req, res, next) {
                 p.save(function (errr) {
                     console.log(errr);
                 });
-                console.log("<a href='http://120.24.61.90:8002/html/user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'>真棒！ 现在也来亮瞎你的朋友圈 Well done!  Last step: show off to your friends！</a>")
-                res.reply("<a href='http://120.24.61.90:8002/html/user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'>真棒！ 现在也来亮瞎你的朋友圈 Well done!  Last step: show off to your friends！</a>");
+                //console.log("<a href='http://120.24.61.90:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'>真棒！ 现在也来亮瞎你的朋友圈 Well done!  Last step: show off to your friends！</a>")
+                //res.reply("<a href='http://120.24.61.90:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'>真棒！ 现在也来亮瞎你的朋友圈 Well done!  Last step: show off to your friends！</a>");
+                resources.users.findOne({openid: message.FromUserName}, function (err, use) {
+
+
+                    if(use.userInfo.language=='zh_CN'){
+                        res.reply("<a href='http://120.24.61.90:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'>真棒！ 现在也来亮瞎你的朋友圈！</a>");
+                    }
+                    else{
+                        res.reply("<a href='http://120.24.61.90:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'> Well done!  Last step: show off to your friends！</a>");
+                    }
+
+                });
             });
             break;
         case "voice":
