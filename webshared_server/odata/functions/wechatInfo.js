@@ -51,14 +51,14 @@ router.all('/wechat', wechat(config, function (req, res, next) {
                 resources.users.findOne({openid: message.FromUserName}, function (err, use) {
 
 
-                    if(use.userInfo.language=='zh_CN'){
-                        res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG");
+                    if(use.userInfo.language=='zh_CN'){ 
+                        res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个 BiiiG!");
                     }
                     else{
                         res.reply("Welcome to 【" + doc.info.theme + "】 " + doc.name + ", " +
-                            "Selfie, upload, you are the BiiiG one on the  Screen!");
+                            "Take a selfie, upload here, you are the BiiiG one on the  Screen!");
                     }
-
+  
                 });
 
 
@@ -73,7 +73,7 @@ router.all('/wechat', wechat(config, function (req, res, next) {
             });
             break;
         case "subscribe":
-
+!  
             resources.users.findOne({openid: message.FromUserName}, function (err, use) {
                 if (err) return res.status(500).send("server err");
                 else if (use) {
@@ -94,11 +94,11 @@ router.all('/wechat', wechat(config, function (req, res, next) {
                             q.save();
                             //res.reply(use.userInfo.language);
                             if(use.userInfo.language=='zh_CN'){
-                                res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG");
+                                res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个 BiiiG!");
                             }
                             else{
                                 res.reply("Welcome to 【" + doc.info.theme + "】 " + doc.name + ", " +
-                                    "Selfie, upload, you are the BiiiG one on the  Screen!");
+                                    "Take a selfie, upload here, you are the BiiiG one on the  Screen!");
                             }
 
                             /*res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG！\n" +
@@ -139,6 +139,13 @@ router.all('/wechat', wechat(config, function (req, res, next) {
                                             }
                                         }, function (err, doc) {
                                             res.reply("欢迎来到GoBiiiGorGoHome");
+                                            /*if(use.userInfo.language=='zh_CN'){
+                                                res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个 BiiiG! 点击这里分享给好友");
+                                            }
+                                            else{
+                                                res.reply("Welcome to 【" + doc.info.theme + "】 " + doc.name + ", " +
+                                                    "Take a selfie, upload here, you are the BiiiG one on the  Screen!!   Tap here, show off to your friends!");
+                                            }*/
                                         });
 
 
@@ -165,11 +172,11 @@ router.all('/wechat', wechat(config, function (req, res, next) {
 
                                                 q.save();
                                                 if(use.userInfo.language=='zh_CN'){
-                                                    res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG");
+                                                    res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个 BiiiG! ");
                                                 }
                                                 else{
                                                     res.reply("Welcome to 【" + doc.info.theme + "】 " + doc.name + ", " +
-                                                        "Selfie, upload, you are the BiiiG one on the  Screen!");
+                                                        "Take a selfie, upload here, you are the BiiiG one on the  Screen!");
                                                 }
                                                 /*res.reply("欢迎来到【" + doc.info.theme + "】" + doc.name + "的直播，自拍、上传，你就是大屏幕上的那个BiiiG！\n" +
                                                     "Welcome to 【" + doc.info.theme + "】 " + doc.name + " , " +
@@ -226,10 +233,10 @@ router.all('/wechat', wechat(config, function (req, res, next) {
 
 
                     if(use.userInfo.language=='zh_CN'){
-                        res.reply("<a href='http://gobiiig.com:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'>真棒！ 现在也来亮瞎你的朋友圈！</a>");
+                        res.reply("<a href='http://gobiiig.com:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'>真棒！ 现在也来亮瞎你的朋友圈！点击这里分享给好友</a>");
                     }
                     else{
-                        res.reply("<a href='http://gobiiig.com:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'> Well done!  Last step: show off to your friends！</a>");
+                        res.reply("<a href='http://gobiiig.com:8002/html/share-user.html?openid=" + message.FromUserName + "&activity=" + doc.activity + "&userid=" + message.FromUserName + "'> Well done!  Last step: show off to your friends！Tap here, show off to your friends!</a>");
                     }
 
                 });
